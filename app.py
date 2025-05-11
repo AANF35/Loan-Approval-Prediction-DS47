@@ -40,7 +40,7 @@ def run_ml_app():
     left, right = st.columns((2,2))
     gender = left.selectbox('Gender',('Male','Female'))
     married = right.selectbox('Married',('Yes','No'))
-    dependent = left.selectbox('Depemdent', (0,1,2,3))
+    dependent = left.selectbox('Dependent', (0,1,2,3))
     education = right.selectbox('Education', ('Graduate', 'Not Graduate'))
     self_employed = left.selectbox('Self-Employed', ('Yes', 'No'))
     applicant_income = right.number_input('Applicant Income')
