@@ -44,6 +44,7 @@ def run_ml_app():
     education = right.selectbox('Education', ('Graduate', 'Not Graduate'))
     self_employed = right.selectbox('Self-Employed', ('Yes', 'No'))
     applicant_income = right.number_input('Applicant Income')
+    coApplicant_income = right.number_input('CoApplicant Income')
     loan_amount = right.number_input('Loan Amount')
     loan_amount_term = left.number_input(label = 'Loan Amount Term', 
                                          min_value=10, max_value=360)
