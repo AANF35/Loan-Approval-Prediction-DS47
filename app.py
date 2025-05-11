@@ -39,14 +39,14 @@ def run_ml_app():
     # Membuat struktur form
     left, right = st.columns((2,2))
     gender = left.selectbox('Gender',('Male','Female'))
-    married = left.selectbox('Married',('Yes','No'))
+    married = right.selectbox('Married',('Yes','No'))
     dependent = left.selectbox('Depemdent', (0,1,2,3))
-    education = left.selectbox('Education', ('Graduate', 'Not Graduate'))
+    education = right.selectbox('Education', ('Graduate', 'Not Graduate'))
     self_employed = left.selectbox('Self-Employed', ('Yes', 'No'))
     applicant_income = right.number_input('Applicant Income')
-    coApplicant_income = right.number_input('CoApplicant Income')
+    coApplicant_income = left.number_input('CoApplicant Income')
     loan_amount = right.number_input('Loan Amount')
-    loan_amount_term = right.number_input(label = 'Loan Amount Term', 
+    loan_amount_term = left.number_input(label = 'Loan Amount Term', 
                                          min_value=10, max_value=360)
     credit_history = right.selectbox('Credit History',(0.0,1.0))
     property_area = st.selectbox('Property Area', ("Rural", "Semiurban", "Urban"))
