@@ -42,7 +42,7 @@ def run_ml_app():
     married = left.selectbox('Married',('Yes','No'))
     dependent = left.selectbox('Depemdent', (0,1,2,3))
     education = right.selectbox('Education', ('Graduate', 'Not Graduate'))
-    self_employed = right.selectbox('Married', ('Yes', 'No'))
+    self_employed = right.selectbox('Self-Employed', ('Yes', 'No'))
     applicant_income = right.number_input('Applicant Income')
     loan_amount = right.number_input('Loan Amount')
     loan_amount_term = left.number_input(label = 'Loan Amount Term', 
