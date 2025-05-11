@@ -46,7 +46,7 @@ def run_ml_app():
     applicant_income = right.number_input('Applicant Income')
     coApplicant_income = right.number_input('CoApplicant Income')
     loan_amount = right.number_input('Loan Amount')
-    loan_amount_term = left.number_input(label = 'Loan Amount Term', 
+    loan_amount_term = right.number_input(label = 'Loan Amount Term', 
                                          min_value=10, max_value=360)
     credit_history = right.selectbox('Credit History',(0.0,1.0))
     property_area = st.selectbox('Property Area', ("Rural", "Semiurban", "Urban"))
